@@ -26,6 +26,51 @@ body {
   grid-template-rows: repeat(10, minmax(0, 1fr));
 }
 
+#custom-grid-size-mobile {
+  grid-template-columns: repeat(14, minmax(0, 1fr));
+  grid-template-rows: repeat(12, minmax(0, 1fr));
+}
+
 .width-col-span {
   grid-column: span 18 / span 18;
 }
+
+.width-col-span-mobile {
+  grid-column: span 12 / span 12;
+}
+
+
+.carousel-animation-1 {
+  animation: carousel-animation-1 10s infinite linear;
+}
+
+.carousel-animation-2 {
+  animation: carousel-animation-2 10s infinite linear;
+  animation-delay: 5s;
+}
+
+@keyframes carousel-animation-1 {
+  0% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes carousel-animation-2 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
