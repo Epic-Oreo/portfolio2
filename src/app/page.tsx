@@ -2,8 +2,10 @@ import Link from "next/link";
 import SideBar from "./sideBar";
 import Carousel from "./carousel";
 import { ArrowRight } from "lucide-react";
+import DesktopContainer from "./desktopContainer";
+import MobileContainer from "./mobileContainer";
 
-export default function Home() {
+const Home = ()=>{
   return (
     <div className="flex w-full h-full md:flex-row flex-col justify-between gap-4">
       <div className="w-full h-full flex flex-col justify-between ">
@@ -44,3 +46,14 @@ export default function Home() {
     </div>
   );
 }
+
+const Changer = ()=>{
+  return (
+    <>
+      <DesktopContainer><Home/></DesktopContainer>
+      <MobileContainer><Home/></MobileContainer>
+    </>
+  )
+}
+
+export default Changer

@@ -29,13 +29,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* <div className="block">1</div>
-        <div className="hidden sm:block">sm</div>
-        <div className="hidden md:block">md</div>
-        <div className="hidden lg:block">lg</div>
-        <div className="hidden xl:block">xl</div> */}
-        <DesktopContainer>{children}</DesktopContainer>
-        <MobileContainer>{children}</MobileContainer>
+        <div className="absolute top-0 left-0 hidden">
+          <div className="block">1</div>
+          <div className="hidden sm:block">sm</div>
+          <div className="hidden md:block">md</div>
+          <div className="hidden lg:block">lg</div>
+          <div className="hidden xl:block">xl</div>
+        </div>
+        {/* <DesktopContainer>{children}</DesktopContainer>
+        <MobileContainer>{children}</MobileContainer> */}
+        {children}
       </body>
     </html>
   );
