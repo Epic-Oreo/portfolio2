@@ -54,7 +54,7 @@ const CookieUtilsCard = () => {
         </div>
       </Link>
 
-      <div className="w-full h-px mt-6 px-2">
+      <div className="w-full h-px mt-6 px-2 block md:hidden">
         <div className="w-full h-full bg-foreground opacity-30  "></div>
       </div>
     </div>
