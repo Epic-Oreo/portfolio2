@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const ApexCard = () => {
   return (
-    <div className="flex gap-4">
+    <div className="flex flex-col md:flex-row gap-4">
       <div className="flex flex-col">
         <h2 className="text-xl font-bold md:text-3xl">Apex</h2>
         <p>
@@ -53,6 +53,10 @@ const ApexCard = () => {
           <ExternalLink className="size-10 text-foreground duration-200 group-hover:translate-y-0 -translate-y-10" />
         </div>
       </Link>
+
+      <div className="w-full h-px mt-6 px-2">
+        <div className="w-full h-full bg-foreground opacity-30  "></div>
+      </div>
     </div>
   );
 };
