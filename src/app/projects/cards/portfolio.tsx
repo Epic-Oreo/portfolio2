@@ -32,7 +32,7 @@ const PortfolioCard = () => {
         </div>
 
         <div className="flex mt-1 p-2">
-          <Link href={"#"} className="w-10 h-10 group rounded-lg">
+          <Link href={"https://github.com/Epic-Oreo/portfolio2"} target="_blank" className="w-10 h-10 group rounded-lg">
             <GithubIcon className="fill-white w-full h-full"/>
           </Link>
         </div>
