@@ -3,7 +3,7 @@
 import { LayoutGrid } from "lucide-react";
 import FancyButton from "./fancyButton";
 
-const ReplitIcon = (props: React.SVGProps<SVGSVGElement>) => (
+export const ReplitIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     {...props}
     role="img"
@@ -15,7 +15,7 @@ const ReplitIcon = (props: React.SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-const GithubIcon = (props: React.SVGProps<SVGSVGElement>) => (
+export const GithubIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     {...props}
     role="img"

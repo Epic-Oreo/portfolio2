@@ -22,7 +22,7 @@ const ApexCard = () => {
               NextJS
             </span>
             <span className="bg-foreground opacity-80 text-background rounded-full px-2 text-sm">
-              Tailwind
+              TailwindCSS
             </span>
             <span className="bg-foreground opacity-80 text-background rounded-full px-2 text-sm">
               Framer Motion (now Motion)

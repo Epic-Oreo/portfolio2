@@ -1,14 +1,15 @@
+import { GithubIcon } from "@/app/sideBar";
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-const CookieUtilsCard = () => {
+const PortfolioCard = () => {
   return (
     <div className="flex flex-col md:flex-row gap-4">
-      <div className="flex flex-col">
-        <h2 className="text-xl font-bold md:text-3xl">Cooke Utils</h2>
-        <p>
-          CookieUtils was a python package I created and published in my freshman year of highschool. It was made because I was tired of rewriting the same code for every project I made and wanted a way to condense the tools I used into one package. It was my first experience with any kind of package development and I had a lot of fun making it and learning about package development. 
+      <div className="flex flex-col w-full">
+        <h2 className="text-xl font-bold md:text-3xl">This Portfolio</h2>
+        <p className="w-full">
+          I had tried to make a portfolio on a few other occasions but never really liked the way it looked. I had a view in my mind on the way I wanted it to look and this website I think captures it pretty well
         </p>
 
         {/* <Link href="#" className="underline mt-4">
@@ -19,15 +20,21 @@ const CookieUtilsCard = () => {
           <h3 className="text-lg font-bold md:text-xl">Technologies</h3>
           <div className="flex flex-wrap gap-2">
             <span className="bg-foreground opacity-80 text-background rounded-full px-2 text-sm">
-              Python
+              Typescript
             </span>
             <span className="bg-foreground opacity-80 text-background rounded-full px-2 text-sm">
-              setuptools
+              NextJs
             </span>
-            {/* <span className="bg-foreground opacity-80 text-background rounded-full px-2 text-sm">
-              Framer Motion (now Motion)
-            </span> */}
+            <span className="bg-foreground opacity-80 text-background rounded-full px-2 text-sm">
+              TailwindCSS
+            </span>
           </div>
+        </div>
+
+        <div className="flex mt-1 p-2">
+          <Link href={"#"} className="w-10 h-10 group rounded-lg">
+            <GithubIcon className="fill-white w-full h-full"/>
+          </Link>
         </div>
       </div>
       <Link
@@ -38,7 +45,7 @@ const CookieUtilsCard = () => {
       "
       >
         <Image
-          src={"/cookieUtils/s1.png"}
+          src={"/portfolio/s1.png"}
           width={200}
           height={200}
           className="w-full h-full object-cover rounded-lg overflow-hidden"
@@ -61,4 +68,4 @@ const CookieUtilsCard = () => {
   );
 };
 
-export default CookieUtilsCard;
+export default PortfolioCard;
