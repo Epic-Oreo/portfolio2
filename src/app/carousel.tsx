@@ -18,22 +18,6 @@ export default function Carousel({
         className
       )}
     >
-      {/* <div className="animate-marquee whitespace-nowrap w-full">
-        {items.map((item, index) => (
-          <span key={index} className={"mx-4 font-bold "}>
-            {item}
-          </span>
-        ))}
-      </div>
-
-      <div className="absolute top-0 animate-marquee2 whitespace-nowrap">
-        {items.map((item, index) => (
-          <span key={index} className={"mx-4 font-bold "}>
-            {item}
-          </span>
-        ))}
-      </div> */}
-
       <div className="relative flex overflow-x-hidden">
         <div className="py-12 animate-marquee whitespace-nowrap">
           {items.map((item, index) => (
@@ -41,9 +25,7 @@ export default function Carousel({
             {item}
           </span>
         ))}
-          
         </div>
-
         <div className="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
           {items.map((item, index) => (
           <span key={index} className={"mx-4 font-bold "}>
