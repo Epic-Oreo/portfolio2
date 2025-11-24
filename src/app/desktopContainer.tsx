@@ -10,7 +10,7 @@ const DesktopContainer = ({
     <div className="sw-screen h-screen justify-center items-center hidden md:flex p-4">
       <div
         id="custom-grid-size"
-        className="max-w-4xl w-full h-96 bg-gradient-to-br from-slate-200 to-slate-400 grid gap-[1px]"
+        className="max-w-4xl w-full h-96 bg-linear-to-br from-slate-200 to-slate-400 grid gap-px"
       >
         <div className="bg-background"></div>
         <div className="width-col-span bg-background"></div>

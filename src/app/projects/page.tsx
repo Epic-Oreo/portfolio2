@@ -61,7 +61,7 @@ const Page = () => {
 //         </div>
 //         <div className="w-full bg-foreground h-px"></div>
 //       </div>
-//       <div className="pl-14 py-6 sm:pl-[4.5rem] sm:py-8 md:pl-20 md:py-10 relative">
+//       <div className="pl-14 py-6 sm:pl-18 sm:py-8 md:pl-20 md:py-10 relative">
 //         <div className="h-full absolute left-10 sm:left-14 md:left-16 top-0 bg-foreground w-px"></div>
 
 //         <div className="flex flex-col gap-10 md:gap-20 pb-10 max-w-7xl  ">

@@ -35,7 +35,7 @@ const FancyButton = ({
         ref={textRef}
         className={`
           hidden md:block absolute top-1/2 -translate-y-1/2 left-0 z-50 text-foreground opacity-0 group-hover:opacity-100 duration-200 group-hover:translate-x-0 translate-x-11
-          before:w-full before:h-full before:bg-background before:top-0 before:-z-10 before:left-0 before:absolute before:blur  
+          before:w-full before:h-full before:bg-background before:top-0 before:-z-10 before:left-0 before:absolute before:blur-sm  
         `}
         style={{
           left: "-"+ leftAmount + "px"

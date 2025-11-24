@@ -12,8 +12,8 @@ export default function Carousel({
     <div
       className={twMerge(
         `relative flex overflow-x-hidden w-full
-      before:absolute before:left-0 before:h-full before:bg-gradient-to-l before:from-transparent before:to-background before:w-20 before:z-10
-      after:absolute after:right-0 after:h-full after:bg-gradient-to-r after:from-transparent after:to-background after:w-20 after:z-10
+      before:absolute before:left-0 before:h-full before:bg-linear-to-l before:from-transparent before:to-background before:w-20 before:z-10
+      after:absolute after:right-0 after:h-full after:bg-linear-to-r after:from-transparent after:to-background after:w-20 after:z-10
     `,
         className
       )}

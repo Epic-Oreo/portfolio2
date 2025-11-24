@@ -36,7 +36,7 @@ const ObsidianRideCard = () => {
       <Link
         href={"https://obsidianride.com"}
         target="_blank"
-        className="w-64 h-64 bg-background flex-shrink-0 rounded-lg relative group cursor-pointer
+        className="w-64 h-64 bg-background shrink-0 rounded-lg relative group cursor-pointer
         after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-foreground after:opacity-5 after:blur-xl after:-z-10
       "
       >
