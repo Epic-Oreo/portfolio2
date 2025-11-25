@@ -6,6 +6,7 @@
 
   --animate-marquee: marquee 10s linear infinite;
   --animate-marquee2: marquee2 10s linear infinite;
+  --animate-pulseDown: pulseDown 1s linear infinite;
 
   @keyframes marquee {
     0% {
@@ -21,6 +22,24 @@
     }
     100% {
       transform: translateX(0%);
+    }
+  }
+
+  @keyframes pulseDown {
+    0% {
+      opacity: 0%;
+    }
+    20% {
+      transform: translateY(0px);
+      opacity: 100%;
+    }
+    70% {
+      transform: translateY(10px);
+      opacity: 0%;
+    }
+    100% {
+      transform: translateY(10px);
+      opacity: 0%;
     }
   }
 }

@@ -10,7 +10,7 @@ const ObsidianRideCard = () => {
         <p>
           ObsidianRide is a black-car ride scheduling service I started work on
           for a client in 2023. Its built on NextJS, Firebase, and Capacitor.
-          It's been live since the summer of 2024. It has accounts, drivers, a
+          It&apos;s been live since the summer of 2024. It has accounts, drivers, a
           backend office dashboard, analytics, ride management, and more.
         </p>
 
