@@ -3,7 +3,6 @@ import Carousel from "./carousel";
 import { ArrowRight } from "lucide-react";
 import DesktopContainer from "./desktopContainer";
 import MobileContainer from "./mobileContainer";
-import FancyButton from "./fancyButton";
 
 export const ReplitIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg

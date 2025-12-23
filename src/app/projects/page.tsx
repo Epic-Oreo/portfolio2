@@ -2,9 +2,8 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { ChevronDown, MouseIcon } from "lucide-react";
 
-const sectionHeight = 600;
+const sectionHeight = 100;
 
 const cards = [
   {
@@ -15,18 +14,18 @@ const cards = [
     url: "https://apex-wheat.vercel.app/",
   },
   {
-    title: "Cooke Utils",
-    description:
-      "CookieUtils was a python package I created and published in my freshman year of highschool. It was made because I was tired of rewriting the same code for every project I made and wanted a way to condense the tools I used into one package. It was my first experience with any kind of package development and I had a lot of fun making it and learning about package development.",
-    image: "/cookieUtils/s1.png",
-    url: "https://pypi.org/project/cookieutils/",
-  },
-  {
     title: "ObsidianRide",
     description:
       "  ObsidianRide is a black-car ride scheduling service I started work on for a client in 2023. Its built on NextJS, Firebase, and Capacitor. It's been live since the summer of 2024. It has accounts, drivers, a backend office dashboard, analytics, ride management, and more.",
     image: "/obsidian/s1.png",
     url: "https://obsidianride.com",
+  },
+  {
+    title: "Cooke Utils",
+    description:
+      "CookieUtils was a python package I created and published in my freshman year of highschool. It was made because I was tired of rewriting the same code for every project I made and wanted a way to condense the tools I used into one package. It was my first experience with any kind of package development and I had a lot of fun making it and learning about package development.",
+    image: "/cookieUtils/s1.png",
+    url: "https://pypi.org/project/cookieutils/",
   },
   {
     title: "This Portfolio",
@@ -75,6 +74,7 @@ const Page = () => {
       <div
         className={`sticky top-1/2 -translate-y-1/2 h-max w-full min-w-full p-4 overflow-hidden translate-x`}
       >
+        <h1 className="text-center text-3xl">Projects</h1>
         <div
           className={`flex w-full duration-500 ease-out`}
           style={{
@@ -84,9 +84,9 @@ const Page = () => {
         >
           {cards.map((card, i) => {
             return (
-              <div key={i} className="p-4 h-96 w-full flex-none">
+              <div key={i} className="p-4 h-96 w-full flex-none flex justify-center">
                 <div
-                  className="border w-full h-full p-5 flex gap-3 duration-300"
+                  className="border w-full h-full p-5 flex gap-3 duration-300 max-w-5xl"
                   style={{
                     scale: currentSection == i ? "100%" : "50%",
                   }}
@@ -97,7 +97,7 @@ const Page = () => {
                     width={300}
                     height={300}
                     className="h-full aspect-square object-cover rounded-lg border-2 border-white/30"
-                  />
+                  />  
                   <div className="flex flex-col justify-between">
                     <div>
                       <h2 className="text-4xl font-semibold mb-2">{card.title}</h2>
