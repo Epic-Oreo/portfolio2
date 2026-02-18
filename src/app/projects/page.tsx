@@ -63,8 +63,6 @@ const Page = () => {
   const outerRef = useRef<null | HTMLDivElement>(null);
   const [isTouch, setIsTouch] = useState<boolean>(true);
 
-  // const currentpercentRef 
-
   useEffect(() => {
     if (!outerRef.current) return;
     let isPressed = false;
@@ -131,8 +129,6 @@ const Page = () => {
               <div className="bg-background"></div>
               <div className="bg-background row-span-8"></div>
 
-
-
               <div className="width-col-span row-span-8 overflow-hidden bg-background z-20">
                 <Image className="md:brightness-50 group-hover:brightness-80 duration-200 w-full h-full object-cover" src={card.image} alt="Hello" width={500} height={400} draggable={false}/>
               </div>
@@ -147,7 +143,6 @@ const Page = () => {
               </div>
               <div className="bg-background"></div>
             </div>
-            
           </div>
         );
       })}

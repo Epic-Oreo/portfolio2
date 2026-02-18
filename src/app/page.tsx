@@ -37,7 +37,7 @@ const Home = () => {
           <p className="text-xl">A full stack developer</p>
 
           <p className="mt-5">
-            I am a 1,000,000x developer. I code and stuff, check out my projects
+            I am a full stack developer that likes doing lots of projects in my free time 
           </p>
 
           <div className="flex ">
